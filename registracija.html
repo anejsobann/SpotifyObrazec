@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleregistracija.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registriraj se - Spotify</title>
+    <link rel="shotcut icon" href="pics/slika.svg" type="image/x-icon">
+    
+</head>
+    <body>
+        <header class="glava">
+            <img src="pics/SpotifyLogo.png">
+        </header>
+            <div class="glavni">
+                <div class="progressbar">
+                    <div class="prviProgres"></div>
+                </div>
+                <div class="zacetniDiv">
+                    <a href="ustvarigeslo.html" class="gumb1"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-nazaj-gumb"><path d="M15.957 2.793a1 1 0 0 1 0 1.414L8.164 12l7.793 7.793a1 1 0 1 1-1.414 1.414L5.336 12l9.207-9.207a1 1 0 0 1 1.414 0z"></path>
+                    </svg></a>
+                    <div class="prviText">
+                        <div class="korak">Korak 2 od 3</div>
+                        <div class="ustvariG">Povej nam kaj več o sebi</div>
+                    </div>
+               </div>
+                <div class="drugiDiv">
+                    <div>
+                        <div class="imetext">
+                            <span>Ime</span>
+                        </div>
+                        <div class="textPodIme">
+                            <span>To ime bo prikazano v tvojem profilu</span>
+                        </div>
+                        <div>
+                            <input type="text" name="password" id="ime">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 18px;">
+                        <div class="DatumRojstva">
+                            <span>Datum rojstva</span>
+                        </div>
+                        <div class="textDatumRojstva">
+                            <span>Zakaj potrebujemo tvoj datum rojstva? Več o tem.</span>
+                        </div>
+                        <div class="datum">
+                            <input type="text" name="day" id="day" placeholder="dd"  maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,2); if(this.value > 31) this.value = '31'; if(this.value < 1 && this.value !== '') this.value = '1';">
+
+                            <div style="margin-right:8px;"></div>
+
+                            <div style="position: relative;">
+                                <select name="select" id="select" placeholder="Mesec">
+                                    <option value="" disabled selected hidden>Mesec</option>
+                                    <option value="januar">Januar</option>
+                                    <option value="februar">Februar</option>
+                                    <option value="marec">Marec</option>
+                                    <option value="april">April</option>
+                                    <option value="maj">Maj</option>
+                                    <option value="junij">Junij</option>
+                                    <option value="julij">Julij</option>
+                                    <option value="avgust">Avgust</option>
+                                    <option value="september">September</option>
+                                    <option value="oktober">Oktober</option>
+                                    <option value="november">November</option>
+                                    <option value="december">December</option>
+                                </select>
+
+                                <div class="Svg">
+                                    <svg width="24px" height="24px"  data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"><path d="M2.793 8.043a1 1 0 0 1 1.414 0L12 15.836l7.793-7.793a1 1 0 1 1 1.414 1.414L12 18.664 2.793 9.457a1 1 0 0 1 0-1.414z" fill="#818181"></path></svg>
+                                </div>
+                            </div>
+                            <div style="margin-right:8px;"></div>
+                            <input type="year" name="year" id="year" placeholder="llll">
+                        </div>
+                    </div>
+
+                    <div class="SpolDiv">
+                        <div class="spol">
+                            <span>Spol</span>
+                        </div>
+                        <div class="textPodSpol">
+                            <span>Tvoj spol uporabljamo za pomoč pri prilagajanju naših priporočil glede vsebine in oglasov zate.</span>
+                        </div>
+                    </div>
+
+                    <div class="radiogumbi">
+
+                        <div class="moski_radio">
+                            <input type="radio" style="margin-left: 4px;">
+                            <span id="moski">Moški</span>
+                        </div>
+
+                        <div class="zenska_radio">
+                            <input type="radio"style="margin-left: 2 px;" >
+                            <span id="zenska">Ženska</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

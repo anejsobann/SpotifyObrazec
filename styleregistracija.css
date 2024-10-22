@@ -1,0 +1,294 @@
+@import url(keyframes.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: mixUITiltle;
+    src:url("https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2") format("woff2");
+}
+@font-face{
+    font-family: mixUIBold;
+    src:url("https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2") format("woff2");
+}
+@font-face{
+    font-family: mixUIRegular;
+    src:url("https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: CircularSpotifyBlack;
+    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: CircularSpotifyBold;
+    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: CircularSpotifyBook;
+    src:url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2") format("woff2");
+}
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    color: white;
+    background-color: #121212;
+}
+
+.glava{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px 24px;
+}
+
+.glavni{
+    margin: 0 auto 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progressbar{
+    background:#7C7C7C;
+    width: 436px;
+    height: 2px;
+    display: flex;
+}
+
+.progressbar div{
+    height: 2px;
+    width: 0%;
+}
+
+.prviProgres{
+    background:#1ED760; 
+    animation: drugiProgres 0.2s linear forwards;
+}
+
+.zacetniDiv{
+    height:80px;
+    width: 100%;
+    display: flex;
+}
+
+.gumb1{
+    width: 56px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #121212;
+    cursor: pointer;
+}
+
+.Svg-nazaj-gumb:hover{
+    fill: rgb(255, 255, 255);
+}
+
+.Svg-nazaj-gumb{
+    height: 24px;
+    width: 24px;
+    fill:#bdb3b3;
+    display: block;
+}
+
+.prviText{
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.korak{
+    font-family: mixUIRegular;
+    color: #bdb3b3;
+    margin-right: 85px;
+}
+
+.ustvariG{
+    color: white;
+    font-family: mixUIBold;
+    margin-top: 4px;
+}
+
+.drugiDiv{
+    width: 324px;
+    margin-top:18px;
+}
+
+.imetext{
+    font-size: 14px;
+    font-family: mixUIBold;
+}
+
+.textPodIme{
+    color: #B3B3B3;
+    font-family: mixUIRegular;
+    font-size: 14px;
+}
+
+#ime{
+    all:unset;
+    width:298px;
+    height:22px;
+    border-radius: 4px;
+    background-color: #121212;
+    border:1px #818181 solid;
+    color: white;
+    font-size:16px;
+    font-family: mixUIRegular;
+    padding: 12px;
+    margin-top:8px;
+    display: block;
+}
+
+#ime:hover{
+    border-color: white;
+}
+
+.DatumRojstva{
+    font-size: 14px;
+    font-family: mixUIBold;
+}
+
+.textDatumRojstva{
+    color: #B3B3B3;
+    font-family: mixUIRegular;
+    font-size: 14px;
+}
+
+#day{
+    all:unset;
+    height: 24px;
+    width: 35.56px;
+    border-radius: 4px;
+    background-color: #121212;
+    border:1px #818181 solid;
+    color: white;
+    font-size:16px;
+    font-family: mixUIRegular;
+    padding: 11px;
+    margin-top:8px;
+   
+}
+
+#day::placeholder{
+    color: #bdb3b3;
+}
+
+#day:hover{
+    border-color: white;
+}
+
+#select{
+    all:unset;
+    height: 24px;
+    width: 96px;
+    border-radius: 4px;
+    background-color: #121212;
+    border:1px #818181 solid;
+    color: white;
+    font-size:16px;
+    font-family: mixUIRegular;
+    font-weight:450;
+    padding: 11px 48px 11px 11px;
+    margin-top:8px;
+}
+
+#select::placeholder{
+    color: #ffffff;
+}
+
+#select:hover{
+    border-color: white;
+}
+
+#year{
+    all:unset;
+    height: 24px;
+    width: 67.047px;
+    border-radius: 4px;
+    background-color: #121212;
+    border:1px #818181 solid;
+    color: white;
+    font-size:16px;
+    font-family: mixUIRegular;
+    font-weight:450;
+    padding: 11px 11px 11px 11px;
+    margin-top:8px;
+    
+}
+
+#year::placeholder{
+    color: #bdb3b3;
+}
+
+#year:hover{
+    border-color: white;
+}
+
+.datum{
+    display: flex;
+}
+
+.Svg{
+    position: absolute;
+    right: 12px;
+    top: 20px;
+}
+
+.spol{
+    font-size: 14px;
+    font-family: mixUIBold;
+}
+
+.textPodSpol{
+    color: #B3B3B3;
+    font-family: mixUIRegular;
+    font-size: 14px;
+}
+
+.SpolDiv{
+    margin-top: 16px;
+    margin-left: 2px;
+}
+
+.radiogumbi{
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: mixUIRegular;
+    font-size: 14px;
+    display: flex;
+}
+
+.moski_radio{
+    height: 24px;
+    width: 90.125px;
+    padding: 4px 0px ;
+}
+
+#moski{
+    margin-top: 2px;
+    margin-left: 13px;
+}
+
+.zenska_radio{
+    height: 24px;
+    width: 97.234px;
+    padding: 4px 0px 4px 0px;
+}
+
+#zenska{
+    margin-top: 2px;
+    margin-left: 14px;
+}
