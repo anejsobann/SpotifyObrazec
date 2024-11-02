@@ -11,8 +11,10 @@ html,body {
 
 body {
     color: white;
-    background-color: #636262;
+    /*background-color: #636262;*/
     padding: 32px;
+    background: linear-gradient(to top, black 0%, gray 50%, white 100%);
+    background-image: linear-gradient(rgb(37, 36, 36), black);
 }
   
 .glavni {
@@ -58,6 +60,7 @@ h1{
   background-color: #121212;
   border-radius: 40px;
   border: 1px solid#818181;
+  cursor: pointer;
 }
 
 #facebookdiv {
@@ -87,6 +90,7 @@ h1{
   border-radius: 40px;
   font-family: CircularSpotifyBold;
   border: 1px solid #818181;
+  cursor: pointer;
 }
 
 .facebook:hover {
@@ -104,6 +108,7 @@ h1{
   border-radius: 40px;
   border: 1px solid #818181;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .apple:hover {
@@ -248,7 +253,7 @@ label {
 
 .gumb:hover {
   background-color: #3be477;
-  size-adjust: 5px;
+  transform: scale(1.04);
 }
 
 .gumbNaprej{
@@ -257,4 +262,65 @@ label {
 
 .ikonaskrij .off {
   display: none;
+}
+
+.ikonaskrij{
+  margin-top: 14px;
+}
+
+.geslodiv{
+  width: 324px;
+  position: relative;
+  margin-top: -5px;
+}
+
+#text1{
+  width: 324px;
+  margin-top: 32px;
+}
+
+.pozabljenoGesloText{
+  font-family: mixUIRegular;
+  font-size: 16px;
+  justify-content: center;
+  display: flex;
+  text-decoration: underline;
+}
+
+.pozabljenoGesloText:hover{
+  color: #1ed760;
+}
+
+a{
+  color: white;
+}
+
+.nimasRacunaText{
+  font-family: mixUIRegular;
+  font-size: 16px;
+  color: rgb(182, 176, 176);
+}
+
+.registrirajSeText{
+  font-family: mixUIRegular;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-left: 8px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.registrirajSeText:hover{
+  color: #1ed760;
+}
+
+#text2{
+  width: 324px;
+  margin-top: 32px;
+ 
+}
+
+.wrapSpan{
+  justify-content: center;
+  display: flex;
 }
