@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 html,body {
@@ -13,9 +14,12 @@ html,body {
 body {
     color: white;
     background-color: #3b3b3b;
-    padding: 32px;
-    background: linear-gradient(to top, black 0%, gray 50%, white 100%);
+    padding-top: 32px;
     background-image: linear-gradient(rgb(45, 45, 45), black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .glavni {
@@ -324,4 +328,16 @@ a{
 .wrapSpan{
   justify-content: center;
   display: flex;
+}
+
+
+.noga {
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+  background-color:#121212;
+  box-sizing: border-box;
 }
