@@ -25,10 +25,11 @@ body{
 
 .glavni{
     margin: 0 auto 0;
+    height: 89%;
     width: fit-content;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -258,9 +259,7 @@ a{
 }
 
 .noga {
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     font-family: mixUIRegular;
     font-size: 12px;
     color: #b3b3b3;

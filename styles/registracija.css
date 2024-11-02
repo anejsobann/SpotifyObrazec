@@ -1,4 +1,5 @@
 @import url(keyframes.css);
+@import url(fonts.css);
 
 *{
     margin: 0;
@@ -22,12 +23,13 @@ body{
 }
 
 .glavni {
-    margin: 0 auto 0;
+    margin: 0 auto;
     width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    height: 89%;
 }
 
 .progressbar {
@@ -236,85 +238,39 @@ body{
 }
 
 .radio-container {
-    position: relative;
-    padding-left: 30px; 
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+    margin-right: 24px;
     font-size: 14px;
     font-family: mixUIRegular;
 }
-  
-.radio-container input {
-    position: absolute;
-    opacity: 0;
-}
-  
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 16px; 
-    width: 16px;  
-    background-color: #121212; 
-    border: 1px solid #818181;
-    border-radius: 50%;
-    box-sizing: border-box; 
-}
-  
-.radio-container input:checked ~ .checkmark {
-    background-color: #1ed760; 
-    border-color: #1ed760; 
-}
 
-.checkmark:hover{
-    border: 1px solid #1ed760;
-}
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 8px; 
-    height: 8px; 
+.radio-container input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid gray;
     border-radius: 50%;
-    background: #121212;
+    transition: border 0.1s ease;
+    cursor: pointer;
+    margin-right: 12px;
 }
-  
-.radio-container input:checked ~ .checkmark:after {
-    display: block;
+.radio-container input:checked {
+    border: 5px solid yellowgreen;
 }
 
 #glavniradiodiv{
     margin-top: 12px;
+    display: flex !important;
     width: 350px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-  
-#radiodiv1{
-    width: 100px;
-    line-height: normal;
-}
-  
-#radiodiv2{
-    width: 100px;
-    float: right;
-    margin-top: -20px;
-    margin-right: 160px;
-}
-  
-#radiodiv3{
-    width: 210px;
-    margin-top: 12px;
-}
-  
-#radiodiv4{
-    width: 150px;
-    margin-top: 12px;
-}
-  
-#radiodiv5{
-    width: 210px;
-    margin-top: 12px;
+.radioEntry {
+    width: fit-content;
+    padding: 4px 0 4px 0;
 }
 
 .gumb {
@@ -330,9 +286,7 @@ body{
 }
   
 .noga {
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     font-family: mixUIRegular;
     font-size: 12px;
     color: #b3b3b3;
