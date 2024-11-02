@@ -1,4 +1,5 @@
 @import url(keyframes.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -49,7 +50,7 @@ body{
     padding: 32px 0px 24px;
 }
 
-.glavni{
+.glavni {
     margin: 0 auto 0;
     width: fit-content;
     display: flex;
@@ -58,30 +59,30 @@ body{
     flex-direction: column;
 }
 
-.progressbar{
+.progressbar {
     background:#7C7C7C;
     width: 436px;
     height: 2px;
     display: flex;
 }
 
-.progressbar div{
+.progressbar div {
     height: 2px;
     width: 0%;
 }
 
-.prviProgres{
+.prviProgres {
     background:#1ED760; 
     animation: drugiProgres 0.2s linear forwards;
 }
 
-.zacetniDiv{
+.zacetniDiv {
     height:80px;
     width: 100%;
     display: flex;
 }
 
-.gumb1{
+.gumb1 {
     width: 56px;
     display:flex;
     justify-content:center;
@@ -263,32 +264,119 @@ body{
     margin-left: 2px;
 }
 
-.radiogumbi{
-    margin-top: 10px;
-    color: #ffffff;
-    font-family: mixUIRegular;
+.radio-container {
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 12px;
     font-size: 14px;
-    display: flex;
+    font-family: mixUIRegular;
+}
+  
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px; 
+    width: 16px;  
+    background-color: #121212; 
+    border: 1px solid #818181;
+    border-radius: 50%;
+    box-sizing: border-box; 
+}
+  
+.radio-container input:checked ~ .checkmark {
+    background-color: #1ed760; 
+    border-color: #1ed760; 
 }
 
-.moski_radio{
-    height: 24px;
-    width: 90.125px;
-    padding: 4px 0px ;
+.checkmark:hover{
+    border: 1px solid #1ed760;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%;
+    background: #121212;
+}
+  
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
 }
 
-#moski{
-    margin-top: 2px;
-    margin-left: 13px;
+#glavniradiodiv{
+    margin-top: 12px;
+    width: 350px;
+}
+  
+#radiodiv1{
+    width: 100px;
+    line-height: normal;
+}
+  
+#radiodiv2{
+    width: 100px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 160px;
+}
+  
+#radiodiv3{
+    width: 210px;
+    margin-top: 12px;
+}
+  
+#radiodiv4{
+    width: 150px;
+    margin-top: 12px;
+}
+  
+#radiodiv5{
+    width: 210px;
+    margin-top: 12px;
 }
 
-.zenska_radio{
-    height: 24px;
-    width: 97.234px;
-    padding: 4px 0px 4px 0px;
+.gumb {
+    width: 324px;
+    height: 48px;
+    background-color: #1ed760;
+    border: unset;
+    border-radius: 40px;
+    font-family: mixUIRegular;
+    cursor: pointer;
+    margin-top: 50px;
+    user-select: none;
 }
-
-#zenska{
-    margin-top: 2px;
-    margin-left: 14px;
+  
+.noga {
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    font-family: mixUIRegular;
+    font-size: 12px;
+    color: #b3b3b3;
+    padding: 24px;
+    text-align: center;
+}
+  
+#del1 {
+    font-family: mixUIRegular;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+  
+#del2 {
+    font-family: mixUIRegular;
+    font-size: 12px;
+    color: #b3b3b3;
 }

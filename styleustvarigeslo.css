@@ -1,3 +1,4 @@
+
 @import url(keyframes.css);
 
 * {
@@ -192,12 +193,29 @@ body {
   border-radius: 40px;
   font-family: mixUIRegular;
   cursor: pointer;
-  margin-top: 24px;
+  margin-top: 32px;
+  user-select: none;
+}
+
+.gumbEnabled{
+  user-select: all;
 }
 
 .gumb:hover {
   background-color: #3be477;
 }
+
+#nextButton {
+  background-color: #1ed760; 
+  color: rgb(0, 0, 0);
+  
+}
+
+#nextButton:disabled {
+  background-color: #1ed760; 
+  color: rgb(0, 0, 0);
+}
+
 
 .noga {
   margin: 0 auto;
@@ -236,6 +254,13 @@ body {
 
 .checked.false {
   display: none;
+  color: red;
+}
+#password.invalid {
+  border: 1px solid red;
+}
+#password.invalid:hover {
+  border: 1px solid red;
 }
 
 .check {
@@ -247,6 +272,32 @@ body {
   font-size: 14px;
   font-family: mixUIRegular;
   font-weight: 450;
+}
+
+#span1.invalid{
+  color: #F3727F;
+}
+
+#span2 {
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: mixUIRegular;
+  font-weight: 450;
+}
+
+#span2.invalid{
+  color:#F3727F;
+}
+
+#span3 {
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: mixUIRegular;
+  font-weight: 450;
+}
+
+#span3.invalid{
+  color: #F3727F;
 }
 
 .ikonaskrij .off {

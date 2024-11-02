@@ -84,19 +84,60 @@
                         </div>
                     </div>
 
-                    <div class="radiogumbi">
-
-                        <div class="moski_radio">
-                            <input type="radio" style="margin-left: 4px;">
-                            <span id="moski">Moški</span>
+                    <form class="radiogumb">
+                        <div id="glavniradiodiv">
+                            <div id="radiodiv1">
+                                <label class="radio-container">Moški
+                                  <input type="radio" name="gender" value="male">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div id="radiodiv2">
+                                <label class="radio-container">Ženska
+                                  <input type="radio" name="gender" value="female">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div id="radiodiv3">
+                                <label class="radio-container">Ne želim se opredeliti
+                                  <input type="radio" name="gender" value="no-preference">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div id="radiodiv4">
+                                <label class="radio-container">Nekaj drugega
+                                  <input type="radio" name="gender" value="other">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div id="radiodiv5">
+                                <label class="radio-container">Raje ne bi povedal/-a
+                                  <input type="radio" name="gender" value="prefer-not">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
-
-                        <div class="zenska_radio">
-                            <input type="radio"style="margin-left: 2 px;" >
-                            <span id="zenska">Ženska</span>
+                      </form>
+                      
+                      <form action="novice.html">
+                        <div class="gumbNaprej">
+                            <button type="submit" class="gumb" id="nextButton">
+                                <h3 class="naprejbarva">Naprej</h3>
+                            </button>
                         </div>
-                    </div>
+                    </form>
             </div>
+            
+            <footer class="noga">
+                <span id="nogaID">
+                    <p>This site is protected by reCAPTCHA and the Google</p>
+                    <a id="del1" href="https://policies.google.com/privacy" target="_blank"
+                        rel="noopener noreferrer">Privacy Policy</a>
+                    and
+                    <a id="del2" href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of
+                        Service</a> apply.
+                </span>
+            </footer>
         </div>
     </body>
 </html>

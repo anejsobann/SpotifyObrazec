@@ -99,6 +99,7 @@ label {
   font-family: mixUIRegular;
   padding: 12px;
 }
+
 #textF.invalid {
   border: 1px solid red;
 }
