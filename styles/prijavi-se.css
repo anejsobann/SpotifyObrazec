@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 html,body {
   height: 100%;
 }
@@ -16,7 +17,7 @@ body {
     background: linear-gradient(to top, black 0%, gray 50%, white 100%);
     background-image: linear-gradient(rgb(37, 36, 36), black);
 }
-  
+
 .glavni {
     margin: 0 auto 0;
     width: fit-content;
