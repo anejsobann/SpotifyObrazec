@@ -146,6 +146,7 @@ h4:after {
   background-color: #121212;
   border-radius: 40px;
   border: 1px solid#818181;
+  cursor: pointer;
 }
 
 #facebookdiv {
@@ -175,6 +176,7 @@ h4:after {
   border-radius: 40px;
   font-family: CircularSpotifyBold;
   border: 1px solid #818181;
+  cursor: pointer;
 }
 
 .facebook:hover {
@@ -191,6 +193,7 @@ h4:after {
   background-color: #121212;
   border-radius: 40px;
   border: 1px solid #818181;
+  cursor: pointer;
 }
 
 .apple:hover {
