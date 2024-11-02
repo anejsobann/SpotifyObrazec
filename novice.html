@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylenovice.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registriraj se - Spotify</title>
+    <link rel="shotcut icon" href="pics/slika.svg" type="image/x-icon">
+    
+</head>
+    <body>
+        <header class="glava">
+            <img src="pics/SpotifyLogo.png">
+        </header>
+
+            <div class="glavni">
+                <div class="progressbar">
+                    <div class="prviProgres"></div>
+                </div>
+
+            <div class="zacetniDiv">
+                <a href="registracija.html" class="gumb1"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-nazaj-gumb"><path d="M15.957 2.793a1 1 0 0 1 0 1.414L8.164 12l7.793 7.793a1 1 0 1 1-1.414 1.414L5.336 12l9.207-9.207a1 1 0 0 1 1.414 0z"></path>
+                </svg></a>
+                <div class="prviText">
+                    <div class="korak">Korak 3 od 3</div>
+                    <div class="pogojInDolocila">Pogoji in določila</div>
+                </div>
+            </div>
+
+            <div class="drugiDiv">
+                <div class="prviCheck">
+                    <div id="check1">
+                        <label class="checkbox-container">
+                            <span class="checkbox"></span>
+                            <span class="tekst1">Pošiljajte mi Spotifyeve novice in <br>ponudbe.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tretjiDiv">
+                <div class="drugiCheck">
+                    <div id="check2">
+                        <label class="checkbox-container2">
+                            <span class="checkbox2"></span>
+                            <span class="tekst2">Deli moje registracijske podatke s Spotifyevimi ponudniki vsebine za tržne namene. Upoštevaj, da bodo tvoji <br>podatki morda preneseni v državo zunaj <br>EGP, kot je opisano v našem Pravilniku o zasebnosti.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zadnjidiv">
+                <div class="zadnjiText">
+                    <p>
+                        <span>S klikom gumba »Registriraj se« se strinjaš s Spotifyevimi <a href="/si-sl/legal/end-user-agreement/" target="_blank" rel="noopener noreferrer">Pogoji in določili uporabe</a>.
+                        </span>
+                    </p>
+                </div>
+                
+                <div class="zadnjiText2">
+                    <p>
+                        <span>
+                            Če želiš izvedeti več o tem, kako Spotify zbira, uporablja, deli in varuje tvoje osebne podatke, preberi <a href="/si-sl/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Spotifyev Pravilnik o zasebnosti</a>.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <form action="index.html">
+                <div class="gumbNaprej">
+                    <button type="submit" class="gumb" id="nextButton">
+                        <h3 class="naprejbarva">Registriraj se</h3>
+                    </button>
+                </div>
+            </form>
+
+            <footer class="noga">
+                <span id="nogaID">
+                    <p>This site is protected by reCAPTCHA and the Google</p>
+                    <a id="del1" href="https://policies.google.com/privacy" target="_blank"
+                        rel="noopener noreferrer">Privacy Policy</a>
+                    and
+                    <a id="del2" href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of
+                        Service</a> apply.
+                </span>
+            </footer>
+        </div>
+
+        <script>
+            document.querySelectorAll(".checkbox-container").forEach(container => {
+            container.addEventListener("click", function() {
+                this.querySelector(".checkbox").classList.toggle("active");
+            });
+            });
+
+            document.querySelectorAll(".checkbox-container2").forEach(container => {
+            container.addEventListener("click", function() {
+                this.querySelector(".checkbox2").classList.toggle("active");
+            });
+            });
+
+        </script>
+    </body>
+</html>

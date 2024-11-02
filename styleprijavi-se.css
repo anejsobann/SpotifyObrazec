@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: mixUITiltle;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2")
+    format("woff2");
+}
+@font-face {
+    font-family: mixUIBold;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2")
+    format("woff2");
+}
+@font-face {
+    font-family: mixUIRegular;
+    src: url("https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2")
+    format("woff2");
+}
+  
+@font-face {
+    font-family: CircularSpotifyBlack;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2")
+    format("woff2");
+}
+  
+@font-face {
+    font-family: CircularSpotifyBold;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2")
+    format("woff2");
+}
+  
+@font-face {
+    font-family: CircularSpotifyBook;
+    src: url("https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2")
+    format("woff2");
+}
+html,body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 50%);*/
+    background-color: #636262;
+    padding: 32px;
+}
+  
+.glavni {
+    margin: 0 auto 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.glava {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 734px;
+    height: 36px;
+    padding: 32px 0px 8px 0px;
+    margin-left: 9px;
+}
+
+.prijava_div{
+    width: 734px;
+    padding-bottom: 32px;
+    background-color:#121212;
+    border-radius: 8px;
+}
+
+h1{
+    font-family: mixUITiltle;
+    text-align: center;
+    font-size: 2em;
+}
+
+.povezave {
+    margin-top: 32px;
+    margin-left: 213px;
+}
+
+.google {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  border: 1px solid#818181;
+}
+
+#facebookdiv {
+  margin-top: 8px;
+}
+
+.google:hover {
+  border-color: white;
+}
+
+.ikonagoogle {
+  float: left;
+  margin-left: 31px;
+}
+
+.registrirajbarva {
+  font-size: 16px;
+  color: #FFFFFFE6;
+  margin-right: 21px;
+  font-family: CircularSpotifyBold;
+}
+
+.facebook {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  font-family: CircularSpotifyBold;
+  border: 1px solid #818181;
+}
+
+.facebook:hover {
+  border-color: white;
+}
+.ikonafacebook {
+  float: left;
+  margin-left: 31px;
+}
+
+.apple {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  border: 1px solid #818181;
+  margin-bottom: 8px;
+}
+
+.apple:hover {
+  border-color: white;
+}
+
+.ikonaapple {
+  float: left;
+  margin-left: 31px;
+}
+
+#applediv {
+  margin-top: 8px;
+}
+
+.crta {
+  height: 1px;
+  background-color: #292929;
+  margin: 32px 100px 32px 100px;
+  width: 534px;
+}
+
+.prviDiv {
+    margin-top: -8px;
+    margin-left: 213px;
+}
+
+.naslov {
+  width: 100%;
+  margin-left: 9px;
+}
+
+label {
+  font-size: 14px;
+  font-family: mixUIBold;
+}
+
+.naprejbarva {
+  font-size: 16px;
+  color: black;
+}
+
+.enaslov {
+  margin-bottom: 8px;
+}
+
+#textF {
+  all: unset;
+  width: 298px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #121212;
+  border: 1px #818181 solid;
+  color: white;
+  font-size: 16px;
+  font-family: mixUIRegular;
+  padding: 12px;
+}
+
+#textF.invalid {
+  border: 1px solid red;
+}
+#textF.invalid:hover {
+  border: 1px solid red;
+}
+
+#textF:hover {
+  border-color: white;
+}
+
+#textF::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: mixUIRegular;
+  color: rgb(182, 176, 176);
+}
+
+.epostaIntextF {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+#password {
+  all: unset;
+  width: 298px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #121212;
+  border: 1px #818181 solid;
+  color: white;
+  font-size: 16px;
+  font-family: mixUIRegular;
+  padding: 12px;
+  margin-top: 8px;
+  display: block;
+}
+
+#pasword:hover {
+  border-color: white;
+}
+
+#password::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: mixUIRegular;
+  color: rgb(182, 176, 176);
+}
+
+.ikonaskrij {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  right: 12px;
+  cursor: pointer;
+}
+.ikonaskrij > * {
+  fill: rgb(179, 179, 179);
+}
+
+.ikonaskrij > :hover {
+  fill: #fff;
+  transform: scale(1.05);
+}
+
+.gumb {
+  width: 324px;
+  height: 48px;
+  background-color: #1ed760;
+  border: unset;
+  border-radius: 40px;
+  font-family: mixUIRegular;
+  cursor: pointer;
+  margin-top: 32px;
+  user-select: none;
+}
+
+.gumbEnabled{
+  user-select: all;
+}
+
+.gumb:hover {
+  background-color: #3be477;
+  size-adjust: 5px;
+}
+
+.gumbNaprej{
+  margin-top: -7px;
+}
+
+.ikonaskrij .off {
+  display: none;
+}
