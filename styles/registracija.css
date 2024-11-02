@@ -141,7 +141,7 @@ body{
     font-size: 14px;
 }
 
-#day{
+#dan{
     all:unset;
     height: 24px;
     width: 35.56px;
@@ -156,15 +156,18 @@ body{
    
 }
 
-#day::placeholder{
+#dan::placeholder{
     color: #bdb3b3;
 }
 
-#day:hover{
+#dan:hover{
     border-color: white;
 }
+#ime.invalid, #dan.invalid, #mesec.invalid, #leto.invalid{
+    border: 1px solid red;
+}
 
-#select{
+#mesec{
     all:unset;
     height: 24px;
     width: 96px;
@@ -179,15 +182,15 @@ body{
     margin-top:8px;
 }
 
-#select::placeholder{
+#mesec::placeholder{
     color: #ffffff;
 }
 
-#select:hover{
+#mesec:hover{
     border-color: white;
 }
 
-#year{
+#leto{
     all:unset;
     height: 24px;
     width: 67.047px;
@@ -203,11 +206,11 @@ body{
     
 }
 
-#year::placeholder{
+#leto::placeholder{
     color: #bdb3b3;
 }
 
-#year:hover{
+#leto:hover{
     border-color: white;
 }
 
@@ -282,7 +285,7 @@ body{
     font-family: mixUIRegular;
     cursor: pointer;
     margin-top: 50px;
-    user-select: none;
+    user-mesec: none;
 }
   
 .noga {

@@ -129,6 +129,7 @@
         form.addEventListener("submit", (e) => {
             if (!validateEmail(emailField.value)) {
                 e.preventDefault();
+                emailField.style.border = "1px solid red";
             }
         });
     </script>

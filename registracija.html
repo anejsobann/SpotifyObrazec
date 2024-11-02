@@ -33,7 +33,7 @@
                             <span>To ime bo prikazano v tvojem profilu</span>
                         </div>
                         <div>
-                            <input type="text" name="password" id="ime">
+                            <input type="text" id="ime">
                         </div>
                     </div>
 
@@ -45,12 +45,12 @@
                             <span>Zakaj potrebujemo tvoj datum rojstva? Več o tem.</span>
                         </div>
                         <div class="datum">
-                            <input type="text" name="day" id="day" placeholder="dd"  maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,2); if(this.value > 31) this.value = '31'; if(this.value < 1 && this.value !== '') this.value = '1';">
+                            <input type="text" name="day" id="dan" placeholder="dd"  maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,2); if(this.value > 31) this.value = '31'; if(this.value < 1 && this.value !== '') this.value = '1';">
 
                             <div style="margin-right:8px;"></div>
 
-                            <div style="position: relative;">
-                                <select name="select" id="select" placeholder="Mesec">
+                            <div style="position: relative;" >
+                                <select name="select" id="mesec" placeholder="Mesec">
                                     <option value="" disabled selected hidden>Mesec</option>
                                     <option value="januar">Januar</option>
                                     <option value="februar">Februar</option>
@@ -71,7 +71,11 @@
                                 </div>
                             </div>
                             <div style="margin-right:8px;"></div>
-                            <input type="year" name="year" id="year" placeholder="llll">
+                            <input type="text" name="year" id="leto" placeholder="yyyy" maxlength="4" 
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4); 
+                            if (this.value > 2024) this.value = '2024';">
+
+
                         </div>
                     </div>
 
@@ -112,9 +116,9 @@
                                 </label>
                             </div>
                         </div>
-                      </form>
+                    </form>
                       
-                      <form action="novice.html">
+                    <form action="novice.html" id="noviceForm">
                         <div class="gumbNaprej">
                             <button type="submit" class="gumb" id="nextButton">
                                 <h3 class="naprejbarva">Naprej</h3>
@@ -134,5 +138,29 @@
                 </span>
             </footer>
         </div>
+
+        <script>
+            const imeField = document.getElementById("ime");
+            const danField = document.getElementById("dan");
+            const mesecField = document.getElementById("mesec");
+            const letoField = document.getElementById("leto");
+
+            const noviceForm = document.getElementById("noviceForm");
+            noviceForm.onsubmit = (e) => {
+
+                const options = document.querySelectorAll('input[type="radio"]');
+                const isChecked = Array.from(options).some(option => option.checked);
+
+                if(imeField.value == '' || danField.value == '' || letoField.value == '' || !isChecked) {
+                    e.preventDefault();
+                    imeField.classList.add("invalid");
+                    danField.classList.add("invalid");
+                    mesecField.classList.add("invalid");
+                    letoField.classList.add("invalid");
+
+                }
+            };
+            
+        </script>
     </body>
 </html>
