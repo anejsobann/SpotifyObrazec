@@ -224,9 +224,6 @@ body {
 #password.invalid {
   border: 1px solid red;
 }
-#password.invalid:hover {
-  border: 1px solid red;
-}
 
 .check {
   display: block;
@@ -238,7 +235,6 @@ body {
   font-family: mixUIRegular;
   font-weight: 450;
 }
-
 .span1.invalid{
   color: #F3727F;
 }

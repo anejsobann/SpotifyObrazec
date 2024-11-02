@@ -105,7 +105,7 @@
                 <span class="span1">10 znakov</span>
             </div>
 
-            <form action="registracija.html">
+            <form id="gesloForm" action="registracija.html">
                 <div class="gumbNaprej">
                     <button type="submit" class="gumb" id="nextButton">
                         <h3 class="naprejbarva">Naprej</h3>
@@ -132,39 +132,63 @@
         const chkSpecialChars = document.querySelector(".checked.specialChars");
         const chkTenChar = document.querySelector(".checked.tenChars");
 
+        const chkOneLetterSpan = document.querySelector(".checked.oneLetter + span");
+        const chkSpecialCharsSpan = document.querySelector(".checked.specialChars + span");
+        const chkTenCharSpan = document.querySelector(".checked.tenChars + span");
+
         const passField = document.getElementById("password");
-        const nextButton = document.getElementById("nextButton"); 
+        const nextButton = document.getElementById("nextButton");
 
-        function updateButtonState() {
-            const isOneLetterValid = !chkOneLetter.classList.contains("false");
-            const isSpecialCharsValid = !chkSpecialChars.classList.contains("false");
-            const isTenCharsValid = !chkTenChar.classList.contains("false");
+        const gesloForm = document.getElementById("gesloForm");
 
-            nextButton.disabled = !(isOneLetterValid && isSpecialCharsValid && isTenCharsValid);
+        gesloForm.onsubmit = (e) => {
+            let input = passField.value;
+            console.log(input);
+            
+            if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)){
+                passField.classList.remove("invalid");
+            } else {
+                e.preventDefault();
+
+                passField.classList.add("invalid");
+                chkOneLetterSpan.classList.add("invalid");
+                chkSpecialCharsSpan.classList.add("invalid");
+                chkTenCharSpan.classList.add("invalid");
+            }
         }
-
+    
         passField.addEventListener('input', (e) => {
             let input = passField.value;
 
             if (hasOneLetter(input)) {
-                chkOneLetter.classList.remove("false");
+                chkOneLetter.classList.remove("false"); // false is unchecked
+                chkOneLetterSpan.classList.remove("invalid");
             } else {
                 chkOneLetter.classList.add("false");
+                chkOneLetterSpan.classList.add("invalid");
             }
 
             if (hasSpecialChars(input)) {
                 chkSpecialChars.classList.remove("false");
+                chkSpecialCharsSpan.classList.remove("invalid");
             } else {
                 chkSpecialChars.classList.add("false");
+                chkSpecialCharsSpan.classList.add("invalid");
             }
 
             if (hasTenChars(input)) {
                 chkTenChar.classList.remove("false");
+                chkTenCharSpan.classList.remove("invalid");
             } else {
                 chkTenChar.classList.add("false");
+                chkTenCharSpan.classList.add("invalid");
             }
 
-            updateButtonState(); // Dodan klic za preverjanje stanja gumba
+            if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)){
+                passField.classList.remove("invalid");
+            } else {
+                passField.classList.add("invalid");
+            }
         });
 
         function toggle() {
@@ -198,7 +222,7 @@
         }
 
         function hasSpecialChars(input) {
-            const specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+            const specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~1234567890";
 
             for (let char of input) {
                 if (specialCharacters.indexOf(char) !== -1) {
@@ -211,28 +235,6 @@
         function hasTenChars(input) {
             return input.length >= 10;
         }
-
-        passField.addEventListener('input', (e) => {
-            let input = passField.value;
-
-            if (hasOneLetter(input)) {
-                chkOneLetter.classList.remove("false");
-            } else {
-                chkOneLetter.classList.add("false");
-            }
-
-            if (hasSpecialChars(input)) {
-                chkSpecialChars.classList.remove("false");
-            } else {
-                chkSpecialChars.classList.add("false");
-            }
-
-            if (hasTenChars(input)) {
-                chkTenChar.classList.remove("false");
-            } else {
-                chkTenChar.classList.add("false");
-            }
-        });
 
     </script>
 </body>
