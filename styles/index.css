@@ -1,0 +1,259 @@
+
+@import url(fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  color: white;
+  background-color: #121212;
+}
+
+.glavni {
+  margin: 0 auto 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 88%;
+}
+
+.glava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px 24px;
+}
+
+.prviDiv {
+  margin-top: 2px;
+}
+
+h1 {
+  font-family: mixUITiltle;
+  text-align: center;
+  font-size: 48px;
+}
+
+.naslov {
+  width: 100%;
+}
+label {
+  font-size: 14px;
+  font-family: mixUIBold;
+}
+
+.naprejbarva {
+  font-size: 16px;
+  color: black;
+}
+
+.enaslov {
+  margin-bottom: 8px;
+}
+
+#textF {
+  all: unset;
+  width: 298px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #121212;
+  border: 1px #818181 solid;
+  color: white;
+  font-size: 16px;
+  font-family: mixUIRegular;
+  padding: 12px;
+}
+
+#textF.invalid {
+  border: 1px solid red;
+}
+#textF.invalid:hover {
+  border: 1px solid red;
+}
+
+#textF:hover {
+  border-color: white;
+}
+
+#textF::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: mixUIRegular;
+  color: rgb(182, 176, 176);
+}
+
+.epostaIntextF {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.gumb {
+  width: 324px;
+  height: 48px;
+  background-color: #1ed760;
+  border: unset;
+  border-radius: 40px;
+  font-family: mixUIRegular;
+  cursor: pointer;
+}
+
+.gumb:hover {
+  background-color: #3be477;
+}
+
+.aliDiv {
+  margin-top: 35px;
+}
+
+.ali {
+  font-family: mixUITiltle;
+  width: 324px;
+  height: 20px;
+  padding-right: 0px 12px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+h4 {
+  display: flex;
+  flex-direction: row;
+}
+
+h4:before,
+h4:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #818181;
+  margin: auto;
+  margin-right: 10px; /*nedela crta*/
+  margin-left: 10px; /*nedela crta*/
+}
+
+.povezave {
+  margin-top: 29px;
+}
+
+.google {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  border: 1px solid#818181;
+}
+
+#facebookdiv {
+  margin-top: 8px;
+}
+
+.google:hover {
+  border-color: white;
+}
+
+.ikonagoogle {
+  float: left;
+  margin-left: 20px;
+}
+
+.registrirajbarva {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin-right: 21px;
+  font-family: CircularSpotifyBold;
+}
+
+.facebook {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  font-family: CircularSpotifyBold;
+  border: 1px solid #818181;
+}
+
+.facebook:hover {
+  border-color: white;
+}
+.ikonafacebook {
+  float: left;
+  margin-left: 20px;
+}
+
+.apple {
+  width: 324px;
+  height: 48px;
+  background-color: #121212;
+  border-radius: 40px;
+  border: 1px solid #818181;
+}
+
+.apple:hover {
+  border-color: white;
+}
+
+.ikonaapple {
+  float: left;
+  margin-left: 20px;
+}
+
+#applediv {
+  margin-top: 8px;
+}
+
+.crta {
+  height: 1px;
+  background-color: #292929;
+  margin-top: 32px;
+}
+
+.textZeImasRacun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 31px;
+}
+
+a {
+  font-family: mixUIRegular;
+  font-size: 16px;
+}
+
+#prviDel {
+  color: #b3b3b3;
+}
+
+#drugiDel {
+  color: white;
+}
+
+#barvaPike {
+  color: #b3b3b3;
+}
+
+.noga {
+  margin-top: auto;
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+  padding: 24px;
+  text-align: center;
+}
+
+
+#del1 {
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+#del2 {
+  font-family: mixUIRegular;
+  font-size: 12px;
+  color: #b3b3b3;
+}
