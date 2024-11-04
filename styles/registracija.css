@@ -180,6 +180,7 @@ body{
     font-weight:450;
     padding: 11px 48px 11px 11px;
     margin-top:8px;
+    line-height: 24px;
 }
 
 #mesec::placeholder{
@@ -261,7 +262,7 @@ body{
     margin-right: 12px;
 }
 .radio-container input:checked {
-    border: 5px solid yellowgreen;
+    border: 5px solid #1ed760;
 }
 
 #glavniradiodiv{
@@ -285,7 +286,6 @@ body{
     font-family: mixUIRegular;
     cursor: pointer;
     margin-top: 50px;
-    user-mesec: none;
 }
   
 .noga {
