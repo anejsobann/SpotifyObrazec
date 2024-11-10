@@ -35,6 +35,9 @@
                         <div>
                             <input type="text" id="ime">
                         </div>
+                        <div id="AlertIme">
+                            Vpiši ime svojega profila.
+                        </div>
                     </div>
 
                     <div style="margin-top: 18px;">
@@ -75,9 +78,13 @@
                             oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4); 
                             if (this.value > 2024) this.value = '2024';">
 
+                            </div>
 
                         </div>
-                    </div>
+
+                            <div class="alert">
+                                Vnesi datum rojstva.
+                            </div>
 
                     <div class="SpolDiv">
                         <div class="spol">
@@ -140,6 +147,8 @@
         </div>
 
         <script>
+            const alert = document.querySelector('.alert');
+            const alertIme = document.querySelector('#AlertIme');
             const imeField = document.getElementById("ime");
             const danField = document.getElementById("dan");
             const mesecField = document.getElementById("mesec");
@@ -157,8 +166,14 @@
                     danField.classList.add("invalid");
                     mesecField.classList.add("invalid");
                     letoField.classList.add("invalid");
+                    alert.classList.add('displayBlock');
+                }
+
+                if(imeField.value == ''){
+                    alertIme.classList.add('displayBlock');
                 }
             };
+
             
         </script>
     </body>

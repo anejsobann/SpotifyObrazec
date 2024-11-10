@@ -27,6 +27,12 @@
                 <div class="textfield" name="textfield">
                     <input type="email" name="email" placeholder="name@domain.com" id="textF">
                 </div>
+                <div class="alert">
+                    <span class="alertSpan">
+                        Ta e-poštni naslov je neveljaven. Napisan mora biti v obliki example@email.com
+                    </span>
+                </div>
+
             </div>
             <form id="emailForm" action="ustvarigeslo.html">
                 <div class="gumbNaprej">
@@ -107,6 +113,7 @@
     </div>
 
     <script>
+        const alert = document.querySelector('.alert');
 
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -130,8 +137,11 @@
             if (!validateEmail(emailField.value)) {
                 e.preventDefault();
                 emailField.style.border = "1px solid red";
+                alert.classList.add('displayBlock');
             }
         });
+
+        
     </script>
 </body>
 

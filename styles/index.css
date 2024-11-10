@@ -89,6 +89,20 @@ label {
   color: rgb(182, 176, 176);
 }
 
+.alert{
+  color: #F3727F;
+  font-family: mixUIRegular;
+  height: auto;
+  width: 300px;
+  display: none;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.displayBlock{
+  display: block;
+}
+
 .epostaIntextF {
   margin-top: 40px;
   margin-bottom: 20px;

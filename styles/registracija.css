@@ -95,6 +95,30 @@ body{
     margin-top: 4px;
 }
 
+.alert{
+    color: #F3727F;
+    font-family: mixUIRegular;
+    height: auto;
+    width: 300px;
+    display: none;
+    font-size: 14px;
+    padding: 8px;
+}
+
+#AlertIme{
+    color: #F3727F;
+    font-family: mixUIRegular;
+    height: auto;
+    width: 300px;
+    display: none;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.displayBlock{
+    display: block;
+}
+
 .drugiDiv{
     width: 324px;
     margin-top:18px;
@@ -255,7 +279,7 @@ body{
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 50%;
     transition: border 0.1s ease;
     cursor: pointer;
