@@ -22,6 +22,12 @@ body{
     padding: 32px 0px 24px;
 }
 
+.glava_svg{
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+
 .glavni {
     margin: 0 auto;
     width: fit-content;

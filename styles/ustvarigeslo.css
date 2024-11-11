@@ -1,4 +1,3 @@
-
 @import url(keyframes.css);
 @import url(fonts.css);
 
@@ -7,8 +6,7 @@
   padding: 0;
 }
 
-html,
-body {
+html,body {
   height: 100%;
 }
 
@@ -22,6 +20,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 32px 0px 24px;
+}
+
+.glava_svg{
+  height: 40px;
+  width: 40px;
+  fill: white;
 }
 
 .glavni {

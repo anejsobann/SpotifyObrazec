@@ -8,10 +8,14 @@
 html,
 body {
   height: 100%;
+  
 }
 body {
   color: white;
   background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .glavni {
@@ -25,10 +29,17 @@ body {
 }
 
 .glava {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
   padding: 32px 0px 24px;
+  width: 100%;  
+  display: flex;
+}
+
+.glava_svg{
+  height: 40px;
+  width: 40px;
+  fill: white;
 }
 
 .prviDiv {
@@ -44,6 +55,7 @@ h1 {
 .naslov {
   width: 100%;
 }
+
 label {
   font-size: 14px;
   font-family: mixUIBold;
