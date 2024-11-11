@@ -35,7 +35,7 @@
                         <div>
                             <input type="text" id="ime">
                         </div>
-                        <div id="AlertIme">
+                        <div class="AlertIme">
                             Vpiši ime svojega profila.
                         </div>
                     </div>
@@ -79,7 +79,6 @@
                             if (this.value > 2024) this.value = '2024';">
 
                             </div>
-
                         </div>
 
                             <div class="alert">
@@ -99,31 +98,35 @@
                         <div id="glavniradiodiv">
                             <div class="radioEntry">
                                 <label class="radio-container">Moški
-                                  <input type="radio" name="gender" value="male">
+                                  <input type="radio" name="gender" value="male" id="M">
                                 </label>
                             </div>
                             <div class="radioEntry">
                                 <label class="radio-container">Ženska
-                                  <input type="radio" name="gender" value="female">
+                                  <input type="radio" name="gender" value="female" id="Z">
                                 </label>
                             </div>
                             <div class="radioEntry">
                                 <label class="radio-container">Non-binary
-                                  <input type="radio" name="gender" value="no-preference">
+                                  <input type="radio" name="gender" value="no-preference" id="NP">
                                 </label>
                             </div>
                             <div class="radioEntry">
                                 <label class="radio-container">Nekaj drugega
-                                  <input type="radio" name="gender" value="other">
+                                  <input type="radio" name="gender" value="other" id="O">
                                 </label>
                             </div>
                             <div class="radioEntry">
                                 <label class="radio-container">Raje ne bi povedal/-a
-                                  <input type="radio" name="gender" value="prefer-not">
+                                  <input type="radio" name="gender" value="prefer-not" id="PN">
                                 </label>
                             </div>
                         </div>
                     </form>
+
+                    <div class="RadioAlert">
+                        Izberi svoj spol.
+                    </div>
                       
                     <form action="novice.html" id="noviceForm">
                         <div class="gumbNaprej">
@@ -146,36 +149,7 @@
             </footer>
         </div>
 
-        
-        <script>
-            const alert = document.querySelector('.alert');
-            const alertIme = document.querySelector('#AlertIme');
-            const imeField = document.getElementById("ime");
-            const danField = document.getElementById("dan");
-            const mesecField = document.getElementById("mesec");
-            const letoField = document.getElementById("leto");
-
-            const noviceForm = document.getElementById("noviceForm");
-            noviceForm.onsubmit = (e) => {
-
-                const options = document.querySelectorAll('input[type="radio"]');
-                const isChecked = Array.from(options).some(option => option.checked);
-
-                if(imeField.value == '' || danField.value == '' || letoField.value == '' || !isChecked) {
-                    e.preventDefault();
-                    imeField.classList.add("invalid");
-                    danField.classList.add("invalid");
-                    mesecField.classList.add("invalid");
-                    letoField.classList.add("invalid");
-                    alert.classList.add('displayBlock');
-                }
-
-                if(imeField.value == ''){
-                    alertIme.classList.add('displayBlock');
-                }
-            };
-
-            
-        </script>
+        <script src="js/registracija.js" ></script>
+       
     </body>
 </html>

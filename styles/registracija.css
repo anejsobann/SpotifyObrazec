@@ -102,17 +102,28 @@ body{
     width: 300px;
     display: none;
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 8px 8px 0;
 }
 
-#AlertIme{
+
+.AlertIme{
     color: #F3727F;
     font-family: mixUIRegular;
     height: auto;
     width: 300px;
     display: none;
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 8px 8px 0;
+
+}
+.RadioAlert{
+    color: #F3727F;
+    font-family: mixUIRegular;
+    height: auto;
+    width: 300px;
+    display: none;
+    font-size: 14px;
+    padding: 8px 8px 8px 0;
 }
 
 .displayBlock{

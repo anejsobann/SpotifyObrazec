@@ -96,7 +96,7 @@ label {
   width: 300px;
   display: none;
   font-size: 14px;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
 }
 
 .displayBlock{

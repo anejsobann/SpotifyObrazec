@@ -66,9 +66,9 @@
                 </div>
             </div>
 
-            <form action="index.html">
+            <form action="index.html" id="noviceForm">
                 <div class="gumbNaprej">
-                    <button type="submit" class="gumb" id="nextButton">
+                    <button type="button" class="gumb" id="nextButton">
                         <h3 class="naprejbarva">Registriraj se</h3>
                     </button>
                 </div>
@@ -86,18 +86,8 @@
             </footer>
         </div>
 
-        <script>
-            document.querySelectorAll(".checkbox-container").forEach(container => {
-            container.addEventListener("click", function() {
-                this.querySelector(".checkbox").classList.toggle("active");
-            });
-            });
-
-            document.querySelectorAll(".checkbox-container2").forEach(container => {
-            container.addEventListener("click", function() {
-                this.querySelector(".checkbox2").classList.toggle("active");
-            });
-            });
-        </script>
+    <script src="js/novice.js"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="js/sw.js"></script>
     </body>
 </html>
