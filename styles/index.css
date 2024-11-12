@@ -18,19 +18,8 @@ body {
   overflow: hidden;
 }
 
-.glavni {
-  margin: 0 auto 0;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 88%;
-}
-
 .glava {
   justify-content: center;
-  overflow: hidden;
   padding: 32px 0px 24px;
   width: 100%;  
   display: flex;
@@ -40,6 +29,16 @@ body {
   height: 40px;
   width: 40px;
   fill: white;
+}
+
+.glavni {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 89%;
 }
 
 .prviDiv {
