@@ -69,7 +69,7 @@ label {
   margin-bottom: 8px;
 }
 
-#textF {
+#emailField {
   all: unset;
   width: 298px;
   height: 22px;
@@ -82,18 +82,18 @@ label {
   padding: 12px;
 }
 
-#textF.invalid {
+#emailField.invalid {
   border: 1px solid red;
 }
-#textF.invalid:hover {
+#emailField.invalid:hover {
   border: 1px solid red;
 }
 
-#textF:hover {
+#emailField:hover {
   border-color: white;
 }
 
-#textF::placeholder {
+#emailField::placeholder {
   font-size: 16px;
   font-weight: 500;
   font-family: mixUIRegular;

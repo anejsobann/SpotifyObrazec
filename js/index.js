@@ -6,7 +6,7 @@ function validateEmail(email) {
   return emailRegex.test(email);
 }
 
-const emailField = document.getElementById("textF");
+const emailField = document.getElementById("emailField");
 
 emailField.addEventListener("input", (e) => {
   if (!validateEmail(emailField.value)) {

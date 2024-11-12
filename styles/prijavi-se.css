@@ -1,69 +1,67 @@
-
 @import url(fonts.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
 }
 
-html,body {
+html,
+body {
   height: 100%;
 }
 
 body {
-    color: white;
-    background-color: #3b3b3b;
-    padding-top: 32px;
-    background-image: linear-gradient(rgb(45, 45, 45), black);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  color: white;
+  background-color: #3b3b3b;
+  padding-top: 32px;
+  background-image: linear-gradient(rgb(45, 45, 45), black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .glavni {
-    margin: 0 auto 0;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-  
-.glava {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 734px;
-    height: 36px;
-    padding: 32px 0px 8px 0px;
-    margin-left: 9px;
-    
+  margin: 0 auto 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.glava_svg{
+.glava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 734px;
+  height: 36px;
+  padding: 32px 0px 8px 0px;
+  margin-left: 9px;
+}
+
+.glava_svg {
   height: 40px;
   width: 40px;
   fill: white;
 }
 
-.prijava_div{
-    width: 734px;
-    padding-bottom: 32px;
-    background-color:#121212;
-    border-radius: 8px;
+.prijava_div {
+  width: 734px;
+  padding-bottom: 32px;
+  background-color: #121212;
+  border-radius: 8px;
 }
 
-h1{
-    font-family: mixUITiltle;
-    text-align: center;
-    font-size: 2em;
+h1 {
+  font-family: mixUITiltle;
+  text-align: center;
+  font-size: 2em;
 }
 
 .povezave {
-    margin-top: 32px;
-    margin-left: 213px;
+  margin-top: 32px;
+  margin-left: 213px;
 }
 
 .google {
@@ -90,7 +88,7 @@ h1{
 
 .registrirajbarva {
   font-size: 16px;
-  color: #FFFFFFE6;
+  color: #ffffffe6;
   margin-right: 21px;
   font-family: CircularSpotifyBold;
 }
@@ -144,8 +142,8 @@ h1{
 }
 
 .prviDiv {
-    margin-top: -8px;
-    margin-left: 213px;
+  margin-top: -8px;
+  margin-left: 213px;
 }
 
 .naslov {
@@ -167,7 +165,7 @@ label {
   margin-bottom: 8px;
 }
 
-#textF {
+#emailField {
   all: unset;
   width: 298px;
   height: 22px;
@@ -180,18 +178,18 @@ label {
   padding: 12px;
 }
 
-#textF.invalid {
+#emailField.invalid {
   border: 1px solid red;
 }
-#textF.invalid:hover {
+#emailField.invalid:hover {
   border: 1px solid red;
 }
 
-#textF:hover {
+#emailField:hover {
   border-color: white;
 }
 
-#textF::placeholder {
+#emailField::placeholder {
   font-size: 16px;
   font-weight: 500;
   font-family: mixUIRegular;
@@ -259,7 +257,7 @@ label {
   user-select: none;
 }
 
-.gumbEnabled{
+.gumbEnabled {
   user-select: all;
 }
 
@@ -268,7 +266,7 @@ label {
   transform: scale(1.04);
 }
 
-.gumbNaprej{
+.gumbNaprej {
   margin-top: -7px;
 }
 
@@ -276,22 +274,22 @@ label {
   display: none;
 }
 
-.ikonaskrij{
+.ikonaskrij {
   margin-top: 14px;
 }
 
-.geslodiv{
+.geslodiv {
   width: 324px;
   position: relative;
   margin-top: -5px;
 }
 
-#text1{
+#text1 {
   width: 324px;
   margin-top: 32px;
 }
 
-.pozabljenoGesloText{
+.pozabljenoGesloText {
   font-family: mixUIRegular;
   font-size: 16px;
   justify-content: center;
@@ -299,21 +297,21 @@ label {
   text-decoration: underline;
 }
 
-.pozabljenoGesloText:hover{
+.pozabljenoGesloText:hover {
   color: #1ed760;
 }
 
-a{
+a {
   color: white;
 }
 
-.nimasRacunaText{
+.nimasRacunaText {
   font-family: mixUIRegular;
   font-size: 16px;
   color: rgb(182, 176, 176);
 }
 
-.registrirajSeText{
+.registrirajSeText {
   font-family: mixUIRegular;
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -322,21 +320,19 @@ a{
   text-decoration-thickness: 2px;
 }
 
-.registrirajSeText:hover{
+.registrirajSeText:hover {
   color: #1ed760;
 }
 
-#text2{
+#text2 {
   width: 324px;
   margin-top: 32px;
- 
 }
 
-.wrapSpan{
+.wrapSpan {
   justify-content: center;
   display: flex;
 }
-
 
 .noga {
   font-family: mixUIRegular;
@@ -345,6 +341,7 @@ a{
   padding: 24px;
   text-align: center;
   width: 100%;
-  background-color:#121212;
+  background-color: #121212;
   box-sizing: border-box;
 }
+
