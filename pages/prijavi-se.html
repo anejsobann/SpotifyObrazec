@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/prijavi-se.css">
+    <link rel="stylesheet" href="/styles/prijavi-se.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registriraj se - Spotify</title>
     <link rel="shotcut icon" href="assets/slika.svg" type="image/x-icon">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 
-                <form>
+                <form id="gumb-naprej">
                     <div class="gumbNaprej">
                         <button type="submit" class="gumb">
                             <h3 class="naprejbarva">Prijava</h3>
@@ -107,7 +107,7 @@
 
                 <div id="text2">
                     <span class="wrapSpan">
-                        <span class="nimasRacunaText">Nimaš računa?</span><a href="index.html"><span class="registrirajSeText">Registriraj se za Spotify®</span></a>
+                        <span class="nimasRacunaText">Nimaš računa?</span><a href="/index.html"><span class="registrirajSeText">Registriraj se za Spotify®</span></a>
                     </span>
                 </div>
             </div>
@@ -119,7 +119,9 @@
             </span>
         </footer>
     
-    <script src="js/prijavi-se.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/prijavi-se.js"></script>
+
 </body>
 
 </html>
