@@ -1,107 +1,132 @@
 const chkOneLetter = document.querySelector(".checked.oneLetter");
-        const chkSpecialChars = document.querySelector(".checked.specialChars");
-        const chkTenChar = document.querySelector(".checked.tenChars");
+const chkSpecialChars = document.querySelector(".checked.specialChars");
+const chkTenChar = document.querySelector(".checked.tenChars");
 
-        const chkOneLetterSpan = document.querySelector(".checked.oneLetter + span");
-        const chkSpecialCharsSpan = document.querySelector(".checked.specialChars + span");
-        const chkTenCharSpan = document.querySelector(".checked.tenChars + span");
+const chkOneLetterSpan = document.querySelector(".checked.oneLetter + span");
+const chkSpecialCharsSpan = document.querySelector(
+  ".checked.specialChars + span"
+);
+const chkTenCharSpan = document.querySelector(".checked.tenChars + span");
 
-        const passField = document.getElementById("password");
-        const nextButton = document.getElementById("nextButton");
+const passField = document.getElementById("password");
+const nextButton = document.getElementById("nextButton");
 
-        const gesloForm = document.getElementById("gesloForm");
+const gesloForm = document.getElementById("gesloForm");
 
-        gesloForm.onsubmit = (e) => {
-            let input = passField.value;
-            console.log(input);
-            
-            if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)){
-                passField.classList.remove("invalid");
-            } else {
-                e.preventDefault();
+gesloForm.onsubmit = (e) => {
+  let input = passField.value;
+  console.log(input);
 
-                passField.classList.add("invalid");
-                chkOneLetterSpan.classList.add("invalid");
-                chkSpecialCharsSpan.classList.add("invalid");
-                chkTenCharSpan.classList.add("invalid");
-            }
-        }
-    
-        passField.addEventListener('input', (e) => {
-            let input = passField.value;
+  if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)) {
+    passField.classList.remove("invalid");
+  } else {
+    e.preventDefault();
 
-            if (hasOneLetter(input)) {
-                chkOneLetter.classList.remove("false"); // false is unchecked
-                chkOneLetterSpan.classList.remove("invalid");
-            } else {
-                chkOneLetter.classList.add("false");
-                chkOneLetterSpan.classList.add("invalid");
-            }
+    passField.classList.add("invalid");
+    chkOneLetterSpan.classList.add("invalid");
+    chkSpecialCharsSpan.classList.add("invalid");
+    chkTenCharSpan.classList.add("invalid");
+  }
+};
 
-            if (hasSpecialChars(input)) {
-                chkSpecialChars.classList.remove("false");
-                chkSpecialCharsSpan.classList.remove("invalid");
-            } else {
-                chkSpecialChars.classList.add("false");
-                chkSpecialCharsSpan.classList.add("invalid");
-            }
+passField.addEventListener("input", (e) => {
+  let input = passField.value;
 
-            if (hasTenChars(input)) {
-                chkTenChar.classList.remove("false");
-                chkTenCharSpan.classList.remove("invalid");
-            } else {
-                chkTenChar.classList.add("false");
-                chkTenCharSpan.classList.add("invalid");
-            }
+  if (hasOneLetter(input)) {
+    chkOneLetter.classList.remove("false"); // false is unchecked
+    chkOneLetterSpan.classList.remove("invalid");
+  } else {
+    chkOneLetter.classList.add("false");
+    chkOneLetterSpan.classList.add("invalid");
+  }
 
-            if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)){
-                passField.classList.remove("invalid");
-            } else {
-                passField.classList.add("invalid");
-            }
-        });
+  if (hasSpecialChars(input)) {
+    chkSpecialChars.classList.remove("false");
+    chkSpecialCharsSpan.classList.remove("invalid");
+  } else {
+    chkSpecialChars.classList.add("false");
+    chkSpecialCharsSpan.classList.add("invalid");
+  }
 
-        function toggle() {
-            const show = document.querySelector(".showIcon");
-            const hide = document.querySelector(".hideIcon");
+  if (hasTenChars(input)) {
+    chkTenChar.classList.remove("false");
+    chkTenCharSpan.classList.remove("invalid");
+  } else {
+    chkTenChar.classList.add("false");
+    chkTenCharSpan.classList.add("invalid");
+  }
 
-            if (passField.type == "password") {
-                show.classList.add("off");
-                hide.classList.remove("off");
+  if (hasOneLetter(input) && hasSpecialChars(input) && hasTenChars(input)) {
+    passField.classList.remove("invalid");
+  } else {
+    passField.classList.add("invalid");
+  }
+});
 
-                passField.type = "text";
-            } else {
-                show.classList.remove("off");
-                hide.classList.add("off");
+function toggle() {
+  const show = document.querySelector(".showIcon");
+  const hide = document.querySelector(".hideIcon");
 
-                passField.type = "password";
-            }
-        }
+  if (passField.type == "password") {
+    show.classList.add("off");
+    hide.classList.remove("off");
 
-        function hasOneLetter(input) {
-            const letters =
-                "abcčdefghijklmnopqrsštuvwxyzž" +
-                "abcčdefghijklmnopqrsštuvwxyzž".toUpperCase();
+    passField.type = "text";
+  } else {
+    show.classList.remove("off");
+    hide.classList.add("off");
 
-            for (let letter of input) {
-                if (letters.indexOf(letter) !== -1) {
-                    return true;
-                }
-            }
-            return false;
-        }
+    passField.type = "password";
+  }
+}
 
-        function hasSpecialChars(input) {
-            const specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~1234567890";
+function hasOneLetter(input) {
+  const letters =
+    "abcčdefghijklmnopqrsštuvwxyzž" +
+    "abcčdefghijklmnopqrsštuvwxyzž".toUpperCase();
 
-            for (let char of input) {
-                if (specialCharacters.indexOf(char) !== -1) {
-                    return true;
-                }
-            }
-            return false;
-        }
+  for (let letter of input) {
+    if (letters.indexOf(letter) !== -1) {
+      return true;
+    }
+  }
+  return false;
+}
 
-        function hasTenChars(input) {
-            return input.length >= 10;
-        }
+function hasSpecialChars(input) {
+  const specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~1234567890";
+
+  for (let char of input) {
+    if (specialCharacters.indexOf(char) !== -1) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function hasTenChars(input) {
+  return input.length >= 10;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const trigger = document.getElementById("trigger");
+  const closePopup = document.getElementById("closePopup");
+
+  // Show popup when "@" is clicked
+  trigger.addEventListener("click", () => {
+    popup.style.display = "block";
+  });
+
+  // Hide popup when "Close" button is clicked
+  closePopup.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  // Optional: Hide popup when clicking outside of it
+  window.addEventListener("click", (event) => {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
