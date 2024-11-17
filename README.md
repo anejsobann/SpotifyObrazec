@@ -1,4 +1,4 @@
-Online form
+
 This project is a web form that I created using HTML, CSS and JavaScript languages. I chose the Spotify application for listening to music as the theme of the form and tried to make the form the same in terms of appearance and functionality.
 Functionalities:
 HTML: The structure of the form, which includes input fields such as e-mail, password and other necessary information.
